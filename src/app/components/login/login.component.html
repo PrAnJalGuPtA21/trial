@@ -1,0 +1,34 @@
+<div class="container">
+    <div class="forms-container">
+        <div class="signin-signup">
+            <form (ngSubmit)="onLogin()" class="sign-in-form" [formGroup]="loginForm" autocomplete="off">
+                <h2 class="title font-bold">Sign in</h2>
+                <div class="input-field">
+                    <fa-icon [icon]="famail"></fa-icon>
+                    <input type="text" placeholder="email" name="email" formControlName="email" required />
+                </div>
+                <div class="input-field ">
+                    <fa-icon [icon]="falock"></fa-icon>
+                    <input type="password" placeholder="Password" name="password" formControlName="password" required />
+                </div>
+                <button type="submit" value="Login" class="btn solid shadow-md shadow-black">Login</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="panels-container">
+        <div class="panel left-panel">
+            <div class="content">
+                <h3>New to our community ?</h3>
+                <p>
+                    Discover a world of possibilities! Join us and explore a vibrant
+                    community where ideas flourish and connections thrive.
+                </p>
+                <button class="btn transparent  shadow-md shadow-slate-100" (click)="signupbtn()">
+                    Sign up
+                </button>
+            </div>
+            <img src="https://i.ibb.co/6HXL6q1/Privacy-policy-rafiki.png" class="image" alt="" />
+        </div>
+
+    </div>
