@@ -1,3 +1,16 @@
-<app-header></app-header>
-<router-outlet></router-outlet>
-<app-footer></app-footer>
+<div style="display: flex; flex-direction: row; height: 650px;">
+    <div>
+        <app-sidebar></app-sidebar>
+    </div>
+    <div style="display: flex; flex-direction: column;">
+        <div>
+            <app-header></app-header>
+        </div>
+        <div style="margin: 4px; height: 450px; overflow-y: scroll;">
+            <router-outlet></router-outlet>
+        </div>
+        <div>
+            <app-footer></app-footer>
+        </div>
+    </div>
+</div>

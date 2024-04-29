@@ -10,6 +10,7 @@ import { FeaturesComponent } from './components/features/features.component';
 import { HomeComponent } from './components/home/home.component';
 import { ChildComponent } from './components/home/child/child.component';
 import { FormsModule } from '@angular/forms';
+import { SidebarComponent } from './components/sidebar/sidebar.component';
 
 
 @NgModule({
@@ -20,7 +21,8 @@ import { FormsModule } from '@angular/forms';
     AboutComponent,
     FeaturesComponent,
     HomeComponent,
-    ChildComponent
+    ChildComponent,
+    SidebarComponent
   ],
   imports: [
     CommonModule,
